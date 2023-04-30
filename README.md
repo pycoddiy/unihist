@@ -14,16 +14,16 @@ SYCL, oneAPI, Data Parallel Extensions for Python, NumPy, Numba
 ## Algorithm Idea
 
 Uniform bins
-![Uniform bins](https://github.com/samaid/fast-histogram/blob/main/images/uniform_bins.png)
+![Uniform bins](https://github.com/pycoddiy/unihist/blob/main/images/uniform_bins.png)
 
 Non-uniform bins
-![Non-uniform bins](https://github.com/samaid/fast-histogram/blob/main/images/nonuniform_bins.png)
+![Non-uniform bins](https://github.com/pycoddiy/unihist/blob/main/images/nonuniform_bins.png)
 
 Step 1: Mapping onto non-uniform bins
-![Step 1: Mapping onto non-uniform bins](https://github.com/samaid/fast-histogram/blob/main/images/grid_step0.png)
+![Step 1: Mapping onto non-uniform bins](https://github.com/pycoddiy/unihist/blob/main/images/grid_step0.png)
 
 Step 2: Mapping onto non-uniform bins recursion
-![Step 2: Mapping onto non-uniform bins recursion](https://github.com/samaid/fast-histogram/blob/main/images/grid_step1.png)
+![Step 2: Mapping onto non-uniform bins recursion](https://github.com/pycoddiy/unihist/blob/main/images/grid_step1.png)
 
 ## How to run
 
@@ -31,7 +31,7 @@ Step 2: Mapping onto non-uniform bins recursion
 ```
 conda create -n hist python=3.10 dpctl cmake ninja pybind11 dpcpp_linux-64 -c intel -c conda-forge
 conda activate hist
-git clone https://github.com/samaid/fast-histogram.git
+git clone https://github.com/pycoddiy/unihist.git
 cd .fast-histogram/src
 python setup.py develop
 cd ..
