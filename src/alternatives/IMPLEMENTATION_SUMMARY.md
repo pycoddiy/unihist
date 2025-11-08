@@ -2,12 +2,12 @@
 
 ## Overview
 
-Complete implementation of the VariablePhilox bijective shuffle algorithm from the paper "Bijective Shuffle" across three platforms: Python, C++, and CUDA.
+Complete implementation of the VariablePhilox bijective shuffle algorithm from the paper "Bijective Shuffle".
 
 ## Implementation Files
 
 ### Python Implementation
-- **File**: `varphilox.py` (9.9 KB)
+- **File**: `varphilox.py`
 - **Features**:
   - `VariablePhilox` class with configurable bit widths
   - Vectorized operations using NumPy
@@ -19,7 +19,7 @@ Complete implementation of the VariablePhilox bijective shuffle algorithm from t
 ### C++ Implementations
 
 #### 1. Standalone C++ (varphilox.cpp)
-- **File**: `varphilox.cpp` (6.7 KB)
+- **File**: `varphilox.cpp`
 - **Type**: Complete program with main()
 - **Features**:
   - Full VariablePhilox class implementation
@@ -29,7 +29,7 @@ Complete implementation of the VariablePhilox bijective shuffle algorithm from t
 - **Usage**: `./varphilox`
 
 #### 2. Header-Only Library (varphilox.h)
-- **File**: `varphilox.h` (6.0 KB)
+- **File**: `varphilox.h`
 - **Type**: Header-only library for easy integration
 - **Features**:
   - No dependencies beyond C++11 standard library
@@ -40,7 +40,7 @@ Complete implementation of the VariablePhilox bijective shuffle algorithm from t
 - **Test**: `make run-test`
 
 #### 3. CUDA/GPU Implementation (varphilox.cu)
-- **File**: `varphilox.cu` (15 KB)
+- **File**: `varphilox.cu`
 - **Type**: CUDA-accelerated GPU implementation
 - **Features**:
   - GPU kernels for parallel bijection computation
@@ -230,17 +230,4 @@ src/alternatives/
 ├── README_VARPHILOX.md       # User documentation
 └── IMPLEMENTATION_SUMMARY.md # This file
 ```
-
-## Total Lines of Code
-
-- Python: ~330 lines
-- C++ (standalone): ~200 lines
-- C++ (header): ~170 lines
-- CUDA: ~370 lines
-- Tests: ~90 lines
-- **Total**: ~1160 lines
-
----
-
-*Implementation completed: November 8, 2025*
-*Based on: bijective-shuffle.pdf*
+le.pdf*
